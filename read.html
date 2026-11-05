@@ -1,0 +1,20 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>VisionBridge — Read</title><meta name="description" content="A calm, fully adjustable reader: size, spacing, contrast, reading ruler and faces.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Reader</div><h1>Read it <em>your</em> way.</h1></section>
+  <section class="card reveal" style="margin-bottom:20px"><div style="padding:20px">
+    <div class="ctrlgrid">
+      <div class="slider">Size <input type="range" id="fs" min="14" max="54" step="1"> <b id="fsv"></b></div>
+      <div class="slider">Line <input type="range" id="lh2" min="1.2" max="2.6" step="0.1"> <b id="lh2v"></b></div>
+      <div class="slider">Letter <input type="range" id="ls2" min="-1" max="8" step="0.5"> <b id="ls2v"></b></div>
+      <div class="slider">Word <input type="range" id="ws2" min="0" max="16" step="1"> <b id="ws2v"></b></div>
+    </div>
+    <div class="row" style="margin-top:16px">
+      <div class="seg" id="faces"><button data-v="sans">Sans</button><button data-v="serif">Serif</button><button data-v="mono">Mono</button></div>
+      <button class="btn" id="rulerT" data-press>Reading ruler</button>
+      <button class="btn" id="hcT" data-press>High contrast</button>
+      <button class="btn primary" id="readAloud" data-press style="margin-left:auto">Read aloud</button>
+    </div>
+  </div></section>
+  <div class="reader" id="reader"><div class="ruler" id="ruler"></div><div class="doc" id="doc" contenteditable="true" spellcheck="false"></div></div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

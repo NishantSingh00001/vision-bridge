@@ -1,0 +1,15 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>VisionBridge — Scan</title><meta name="description" content="Pull text out of a photo of a page (OCR), or describe an image — then read or hear it.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Scan a page</div><h1><em>See</em> the words.</h1></section>
+  <div class="grid2">
+    <div class="col">
+      <div class="dropz reveal" id="dz"><div class="big" id="dzIc"></div><div style="font-family:var(--disp);font-weight:700;font-size:18px;margin-top:10px">Drop a photo, or click to choose</div><div style="color:var(--mut);font-size:13px;margin-top:4px">A page, sign, label or screenshot</div></div>
+      <input type="file" id="file" accept="image/*" style="display:none"><input type="file" id="file2" accept="image/*" style="display:none">
+      <div class="row" style="margin-top:16px"><button class="btn" id="descBtn" data-press>Describe an image instead</button></div>
+    </div>
+    <div class="col">
+      <section class="card reveal"><div class="ch"><h2>Result</h2><span class="k"><button class="btn hidden" id="readScan" data-press>Read aloud</button></span></div><div style="padding:22px"><div id="scanOut" style="white-space:pre-wrap;line-height:1.7;color:var(--ink2);min-height:220px"><div class="empty">Scanned text appears here. Needs a Gemini key (Settings).</div></div></div></section>
+    </div>
+  </div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

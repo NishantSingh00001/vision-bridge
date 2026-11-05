@@ -1,0 +1,17 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>VisionBridge — Settings</title><meta name="description" content="Voice, contrast, theme and key.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Preferences</div><h1><em>Settings</em>.</h1></section>
+  <div class="grid2 even">
+    <div class="col"><section class="card reveal"><div class="ch"><h2>Display</h2></div>
+      <div class="setrow"><div><div class="si">Theme</div><div class="sd">Dark or light.</div></div><button class="toggle" id="themeToggle"></button></div>
+      <div class="setrow"><div><div class="si">High contrast</div><div class="sd">Pure black, bold yellow — maximum legibility.</div></div><button class="toggle" id="hcToggle"></button></div>
+      <div class="setrow"><div><div class="si">Accent</div><div class="sd">Recolors the UI and the 3D lens.</div></div><div class="accents" id="accents2"></div></div>
+    </section></div>
+    <div class="col"><section class="card reveal"><div class="ch"><h2>AI & data</h2></div>
+      <div class="setrow"><div><div class="si">Gemini key</div><div class="sd">Enables photo scanning & image description.</div></div><button class="ghost" id="keyBtn" data-press>Set key</button></div>
+      <div class="setrow"><div><div class="si">Export</div><div class="sd">Your text & preferences as JSON.</div></div><button class="ghost" id="exp" data-press>Export</button></div>
+    </section></div>
+  </div>
+  <section class="card reveal" style="margin-top:22px"><div class="ch"><h2>About & features</h2></div><div style="padding:20px"><p style="color:var(--ink2);line-height:1.7;margin-bottom:12px">VisionBridge is a fully client-side reading agent. Reading, speech and simplifying run offline (speech uses your device voices); scanning and image description use your own Gemini key. Nothing is uploaded.</p><div class="feat" id="featlist" style="text-align:left;margin:0"></div></div></section>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

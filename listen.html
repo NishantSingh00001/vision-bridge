@@ -1,0 +1,15 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>VisionBridge — Listen</title><meta name="description" content="Text-to-speech with live word highlighting, voice, speed and pitch control.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Read aloud</div><h1><em>Hear</em> the page.</h1></section>
+  <section class="card reveal" style="margin-bottom:20px"><div style="padding:22px"><div class="voicebar">
+    <button class="bigbtn" id="playBtn" data-press></button><button class="bigbtn sm" id="stopBtn" data-press></button>
+    <div class="fld" style="margin:0;flex:1;min-width:160px"><label>Voice</label><select class="inp" id="voice"></select></div>
+    <div class="slider">Speed <input type="range" id="rate" min="0.5" max="2" step="0.1"> <b id="ratev"></b></div>
+    <div class="slider">Pitch <input type="range" id="pitch" min="0" max="2" step="0.1"> <b id="pitchv"></b></div>
+  </div></div></section>
+  <div class="grid2 even">
+    <section class="card reveal"><div class="ch"><h2>Text</h2></div><div style="padding:18px"><textarea class="ta" id="ta" style="min-height:300px"></textarea></div></section>
+    <section class="card reveal"><div class="ch"><h2>Now reading</h2></div><div style="padding:22px"><div id="hl" style="font-size:20px;line-height:1.9;color:var(--ink2)"></div></div></section>
+  </div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>
